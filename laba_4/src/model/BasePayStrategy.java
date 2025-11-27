@@ -10,7 +10,7 @@ public class BasePayStrategy implements PayStrategy {
             throw new InvalidPayException("Базовая ставка должна быть положительной!");
         }
         if (baseRate >= 10000000) {
-            throw new InvalidPayException("Базовая ставка должна быть <10000000!");
+            throw new InvalidPayException("Базовая ставка должна быть < 10000000!");
         }
         this.baseRate = baseRate;
     }

@@ -11,7 +11,7 @@ public class BonusPayStrategy implements PayStrategy {
             throw new InvalidPayException("Базовая ставка должна быть положительной!");
         }
         if (baseRate >= 10000000) {
-            throw new InvalidPayException("Базовая ставка должна быть <10000000!");
+            throw new InvalidPayException("Базовая ставка должна быть < 10000000!");
         }
         if (bonusPercent <= 0 || bonusPercent >= 100) {
             throw new InvalidPayException("Процент надбавки должен быть больше 0 и меньше 100!");
